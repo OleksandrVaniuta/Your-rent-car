@@ -64,7 +64,6 @@ export const Filter = ({ setFilter, handleAddFilter, setFiltredMsg }) => {
       setActivePrice(true);
       return;
     }
-    console.log(name);
     setActiveMake(true);
   };
 
