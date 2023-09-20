@@ -81,7 +81,6 @@ export const Filter = ({ setFilter, handleAddFilter, setFiltredMsg }) => {
   const handleInputChange = e => {
     const rawValue = e.target.value;
     if (e.target.name === 'from') {
-      console.log(e.target.value);
       setFilterData({ ...filterData, from: e.target.value });
       const numericValue = parseFloat(rawValue.replace(/[^0-9.]/g, ''));
 
@@ -107,6 +106,8 @@ export const Filter = ({ setFilter, handleAddFilter, setFiltredMsg }) => {
       from: '',
       to: '',
     });
+    setInputValueFrom('');
+    setInputValueTo('');
     setFilter(false);
     setFiltredMsg(false);
   };
