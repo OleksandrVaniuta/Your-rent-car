@@ -58,6 +58,7 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
             filtredRes = filtredRes.filter(item => {
               return parseInt(item.mileage) >= parseInt(filterData.from);
             });
+            console.log(filtredRes);
             isChanged = true;
           } else {
             if (filtredRes === null) {
@@ -77,7 +78,7 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
 
           if (filtredRes !== null && isChanged) {
             setData(filtredRes);
-            setFilter(true);
+            setFilter(false);
           } else {
             setFiltredMsg(true);
           }
