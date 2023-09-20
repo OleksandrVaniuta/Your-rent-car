@@ -12,7 +12,7 @@ const Catalog = () => {
   const [page, setPage] = useState(1);
   const [filter, setFilter] = useState(false);
   const [fitredMsg, setFiltredMsg] = useState(false);
-
+ 
   useEffect(() => {
     if (filter) {
       return;
