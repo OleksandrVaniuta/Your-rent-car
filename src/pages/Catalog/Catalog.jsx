@@ -46,7 +46,7 @@ const Catalog = () => {
           setFilter={setFilter}
           setFiltredMsg={setFiltredMsg}
         />
-        {fitredMsg ? (
+        {!fitredMsg ? (
           <CatalogList data={data} />
         ) : (
           <h2>Sorry, nothing on your params</h2>

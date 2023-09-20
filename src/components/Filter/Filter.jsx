@@ -108,7 +108,7 @@ export const Filter = ({ setFilter, handleAddFilter, setFiltredMsg }) => {
       to: '',
     });
     setFilter(false);
-    setFiltredMsg(true);
+    setFiltredMsg(false);
   };
 
   const habldeActiveFilter = e => {

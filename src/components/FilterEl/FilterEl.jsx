@@ -73,7 +73,7 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
             setData(filtredRes);
             setFilter(true);
           } else {
-            setFiltredMsg(false);
+            setFiltredMsg(true);
           }
         });
       } catch {
