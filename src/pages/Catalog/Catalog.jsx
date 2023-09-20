@@ -4,15 +4,19 @@ import api from 'services/servicesAPi';
 
 import { CatalogList } from 'components/CatalogList/CatlaogList';
 import { LoadMoreBtn } from 'components/LoadMoreBtn/LoadMoreBtn';
+import { FilterEl } from 'components/FilterEl/FilterEl';
 
 const Catalog = () => {
   const [data, setData] = useState([]);
   // const [errorMsg, setErrorMsg] = useState('');
   const [page, setPage] = useState(1);
-  // const [isLoading, setIsLoading] = useState(false);
+  const [filter, setFilter] = useState(false);
+  const [fitredMsg, setFiltredMsg] = useState(false);
 
   useEffect(() => {
-    // setIsLoading(true);
+    if (filter) {
+      return;
+    }
     const getData = async () => {
       try {
         await api.fetchCarPerPage(page, 8).then(res => {
@@ -32,13 +36,25 @@ const Catalog = () => {
       }
     };
     getData();
-  }, [page]);
+  }, [page, filter]);
 
   if (data.length > 0) {
     return (
       <>
-        <CatalogList data={data} />
-        <LoadMoreBtn page={page} setPage={setPage} dataLength={data.length} />
+        <FilterEl
+          setData={setData}
+          setFilter={setFilter}
+          setFiltredMsg={setFiltredMsg}
+        />
+        {fitredMsg ? (
+          <CatalogList data={data} />
+        ) : (
+          <h2>Sorry, nothing on your params</h2>
+        )}
+
+        {!filter && (
+          <LoadMoreBtn page={page} setPage={setPage} dataLength={data.length} />
+        )}
       </>
     );
   }

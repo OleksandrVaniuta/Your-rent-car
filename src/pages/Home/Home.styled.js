@@ -16,7 +16,7 @@ export const HomeContainer = styled.div`
 
 export const Title = styled.h1`
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 100px;
   font-family: 'Manrope', sans-serif;
   color: ${({ theme }) => theme.colors.mainWhite};

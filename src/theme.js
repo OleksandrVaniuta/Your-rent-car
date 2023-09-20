@@ -33,7 +33,7 @@ export const theme = {
   colors: {
     yellow: '#FFC107',
     mainWhite: '#ffffff',
-    white: '#FDF7F2',
+    white: '#F7F7FB',
     grey: 'rgba(18, 20, 23, 0.5)',
     black: '#121417',
     blue: '#3470FF',
