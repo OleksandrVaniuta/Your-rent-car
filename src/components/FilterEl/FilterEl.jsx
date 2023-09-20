@@ -6,6 +6,7 @@ import { FilterWrapper } from './FilterEl.styled';
 
 export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
   const handleAddFilter = async filterData => {
+    console.log(filterData);
     if (
       filterData.make.length > 0 ||
       filterData.price.length > 0 ||
@@ -32,6 +33,7 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
                 parseFloat(item.rentalPrice.replace('$', '')) <=
                 parseFloat(filterData.price.replace('$', ''))
             );
+            console.log(filtredRes);
             isChanged = true;
           } else {
             if (filtredRes === null) {
@@ -51,10 +53,12 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
               filtredRes = res;
             }
           }
+          console.log(filterData.from);
           if (filterData.from.length > 0 && !filterData.to.length > 0) {
             filtredRes = filtredRes.filter(item => {
               return parseInt(item.mileage) >= parseInt(filterData.from);
             });
+            isChanged = true;
           } else {
             if (filtredRes === null) {
               filtredRes = res;
