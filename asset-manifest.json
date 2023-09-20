@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/your-rent-car/static/css/main.431291b6.css",
-    "main.js": "/your-rent-car/static/js/main.2470a8e0.js",
-    "static/js/31.3d37aa1f.chunk.js": "/your-rent-car/static/js/31.3d37aa1f.chunk.js",
+    "main.js": "/your-rent-car/static/js/main.bfdc5cf0.js",
+    "static/js/31.26767e22.chunk.js": "/your-rent-car/static/js/31.26767e22.chunk.js",
     "static/js/793.bc9f5786.chunk.js": "/your-rent-car/static/js/793.bc9f5786.chunk.js",
     "static/js/359.bbea19be.chunk.js": "/your-rent-car/static/js/359.bbea19be.chunk.js",
     "static/js/395.7c9eb5ed.chunk.js": "/your-rent-car/static/js/395.7c9eb5ed.chunk.js",
     "static/media/1617393911_16-p-oboi-na-doroge-17.jpg": "/your-rent-car/static/media/1617393911_16-p-oboi-na-doroge-17.259991b518f8f38f42cb.jpg",
     "index.html": "/your-rent-car/index.html",
     "main.431291b6.css.map": "/your-rent-car/static/css/main.431291b6.css.map",
-    "main.2470a8e0.js.map": "/your-rent-car/static/js/main.2470a8e0.js.map",
-    "31.3d37aa1f.chunk.js.map": "/your-rent-car/static/js/31.3d37aa1f.chunk.js.map",
+    "main.bfdc5cf0.js.map": "/your-rent-car/static/js/main.bfdc5cf0.js.map",
+    "31.26767e22.chunk.js.map": "/your-rent-car/static/js/31.26767e22.chunk.js.map",
     "793.bc9f5786.chunk.js.map": "/your-rent-car/static/js/793.bc9f5786.chunk.js.map",
     "359.bbea19be.chunk.js.map": "/your-rent-car/static/js/359.bbea19be.chunk.js.map",
     "395.7c9eb5ed.chunk.js.map": "/your-rent-car/static/js/395.7c9eb5ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.431291b6.css",
-    "static/js/main.2470a8e0.js"
+    "static/js/main.bfdc5cf0.js"
   ]
 }
