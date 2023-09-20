@@ -76,7 +76,7 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
             }
           }
 
-          if (filtredRes !== null && isChanged) {
+          if (filtredRes !== null && isChanged && filtredRes.length > 0) {
             setData(filtredRes);
             setFilter(false);
           } else {
