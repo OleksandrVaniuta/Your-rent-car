@@ -19,6 +19,7 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
         await api.fetchAllCar().then(res => {
           if (filterData.make.length > 0) {
             filtredRes = res.filter(item => item.make === filterData.make);
+
             isChanged = true;
           } else {
             if (filtredRes === null) {
@@ -69,7 +70,8 @@ export const FilterEl = ({ setData, setFilter, setFiltredMsg }) => {
               filtredRes = res;
             }
           }
-          if (filtredRes !== null && !isChanged) {
+
+          if (filtredRes !== null && isChanged) {
             setData(filtredRes);
             setFilter(true);
           } else {
